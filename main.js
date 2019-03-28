@@ -6,7 +6,7 @@ page()
 
 function home() {
     document.querySelector('#sign-in')
-        .innerHTML = `<h1>WoTravel</h1>
+        .textContent = `<h1>WoTravel</h1>
 			<input class="mail" type="email" placeholder="Mail" />
 			<input class="password" type="password" placeholder="Password" />
 			<button class="sign-in-button">Go Travel</button>

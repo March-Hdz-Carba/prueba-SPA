@@ -1,16 +1,18 @@
 //page('ruta', callback)
-page('/',home)
+//page('/',home)
 page('#home', home)
 page('#signUp', signUp)
+page()
 
 function home() {
     document.querySelector('#sign-in')
-        .textContent = `<h1>WoTravel</h1>
+        .innerHTML = `<h1>WoTravel</h1>
 			<input class="mail" type="email" placeholder="Mail" />
 			<input class="password" type="password" placeholder="Password" />
 			<button class="sign-in-button">Go Travel</button>
 			<p>New Traveler?</p>
-			<button class="sign-up-button">Sign Up</button>`
+            <button class="sign-up-button">Sign Up</button>`
+            console.log (home());
 }
 
 function signUp() {
